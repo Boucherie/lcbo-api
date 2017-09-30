@@ -18,9 +18,14 @@ def index
   end
 
   respond_to do |format|
-    format.html
-    format.json {render json: @inventories, status: ok}
+    format.html {
+      render :index
+    }
+    format.json {
+      render json: @inventories, status: ok
+    }
   end
+
 
 
   # Making an api
