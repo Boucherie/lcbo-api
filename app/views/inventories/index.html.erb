@@ -1,1 +1,6 @@
+<h1>Inventory of products</h1>
 
+<% @inventories.each do |inventory| %>
+  <h2><%= inventory[:product_name] %></h2>
+  <p>Located at <%= inventory[:store_name] %>, <%= inventory[:quantity] %> units in stock.</p>
+<% end %>

@@ -1,14 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
   console.log("ready!");
+
   $.ajax({
     url: "/inventories",
-    method: "GET",
-    dataType: "json"
+    type: 'GET'
   }).done(function(data){
-    data.forEach(function(item){
-      transformed_results.toString();
-    });
-    console.log(transformed_results);
+    console.log(data);
   });
+  // storeLookupResults(data)
 
-}
+
+
+  // $.ajax({
+  //   url: "/inventories",
+  //   method: "GET",
+  //   dataType: "transformed_results"
+  // }).done(function(data){
+  //   console.log(data);
+  // });
+
+})
