@@ -1,14 +1,14 @@
+<h1>LCBO Product Catalogue</h1>
 <% @products.each do |product| %>
 <div >
-
   <h2 id="product_images"><%= product["name"] %></h2>
   <%= image_tag (product["image_thumb_url"]) %>
   <ul id="product_details">
     <li>Category: <%= product["primary_category"]%></li>
-    <li>Producer: <%= product["producer_name"]%></li>
-    <li>Alcohol Content: <%= product["alcohol_content"]%></li>
-    <li>On Sale?: <%= product["has_limited_time_offer"]%></li>
     <li>Country of Origin: <%= product["origin"]%></li>
+    <li>Producer: <%= product["producer_name"]%></li>
+    <li>On Sale?: <%= product["has_limited_time_offer"]%></li>
+    <li>Alcohol Content: <%= product["alcohol_content"]%></li>
     <li>Units in Package: <%= product["total_package_units"]%></li>
     <li>Volume: <%= product["package_unit_volume_in_milliliters"] %> mL</li>
   <hr>
